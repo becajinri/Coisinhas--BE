@@ -1,0 +1,19 @@
+Código do tabuleiro 
+
+size(400, 400);
+ellipseMode(CORNER);
+for (int i =0; i <=8; i= i+1) {
+  for (int j =0; j <=8; j= j+1) {
+    if ((j%2==0 && i%2==0) || (j%2==1 && i%2==1)) {
+      fill(0);
+      rect(j*50, i*50, 50, 50);
+      fill(255);
+      ellipse(j*50, i*50, 50, 50);
+    } else {
+      fill(255);
+      rect(j*50, i*50, 50, 50);
+      fill(0);
+      ellipse(j*50, i*50, 50, 50);
+    }
+  }
+}
